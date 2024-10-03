@@ -1,0 +1,16 @@
+#root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.react-multi-carousel-list {
+  overflow: hidden;
+  width: 100%;
+}
+.react-multi-carousel-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
