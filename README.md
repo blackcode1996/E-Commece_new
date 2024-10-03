@@ -48,3 +48,9 @@ export default tseslint.config({
   },
 })
 ```
+
+
+.env
+
+VITE_BASE_API=https://fakestoreapi.com/products
+
