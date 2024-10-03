@@ -14,7 +14,7 @@ export const ProductContextProvider = ({ children }: { children: React.ReactNode
   const [products, setProducts] = useState<any>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
-  const BASE_URL = import.meta.env.VITE_BASE_API;
+  const BASE_URL = import.meta.env.VITE_BASE_PRODUCTS_API;
 
   useEffect(() => {
     const fetchProductsData = async () => {

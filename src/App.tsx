@@ -6,9 +6,9 @@ import { Allroutes } from "./routes/AllRoutes";
 function App() {
   return (
     <CartContextProvider>
-    <ProductContextProvider>
-      <Allroutes />
-    </ProductContextProvider>
+      <ProductContextProvider>
+        <Allroutes />
+      </ProductContextProvider>
     </CartContextProvider>
   );
 }
