@@ -8,7 +8,6 @@ interface BlogCardProps {
 }
 
 const BlogCard: React.FC<BlogCardProps> = ({ postId, title, description }) => {
-  console.log(postId);
   return (
     <Link to={`/blog/${postId}`}>
       <div className="bg-gray-100 p-5 mb-10">

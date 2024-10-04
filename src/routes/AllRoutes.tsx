@@ -10,6 +10,7 @@ import SingleBlog from "../pages/SingleBlog";
 
 const PRODUCTS_BASE_URL = import.meta.env.VITE_BASE_PRODUCTS_API;
 const POSTS_BASE_URL = import.meta.env.VITE_BASE_POSTS_API;
+const page = 1
 
 const router = createBrowserRouter([
   {
@@ -43,6 +44,10 @@ const router = createBrowserRouter([
         path: "/blog/:id",
         loader: (e) => fetchData(`${POSTS_BASE_URL}/${e.params.id}`),
       },
+      {
+        path:"*",
+        element:<h1>Not found</h1>
+      }
     ],
   },
 ]);

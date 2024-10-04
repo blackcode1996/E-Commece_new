@@ -8,7 +8,7 @@ const CartCard = ({
   productTitle,
   productQuantity,
 }) => {
-  const { updateQuantity } = useContext(CartContext);
+  const { updateQuantity,removeSingleProductFromCart } = useContext(CartContext);
 
   return (
     <div
@@ -22,12 +22,12 @@ const CartCard = ({
         <div className="flex flex-col justify-between ml-4 flex-grow">
           <span className="font-bold text-sm">{productTitle}</span>
           <span className="text-red-500 text-xs">Brand Name</span>
-          <a
-            href="#"
+          <button
+            onClick={()=>removeSingleProductFromCart(productId)}
             className="font-semibold hover:text-red-500 text-gray-500 text-xs"
           >
             Remove
-          </a>
+          </button>
         </div>
       </div>
       <div className="flex justify-center w-1/5">
